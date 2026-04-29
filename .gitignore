@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Environment variables (contains your bot token!)
+.env
+
+# Tesseract OCR language files (too big)
+*.traineddata
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
