@@ -190,11 +190,11 @@ bot.on('message', async (msg) => {
     }
 });
 
-// const PORT = process.env.PORT || 3000;
-// app.listen(PORT, async () => {
-//     const botInfo = await bot.getMe();
-//     console.log(`✅ Server on port ${PORT}`);
-//     console.log(`✅ Bot is ready!`);
-//     console.log(`✅ Bot username: @${botInfo.username}`);
-//     console.log(`✅ Share this link: https://t.me/${botInfo.username}`);
-// });
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, async () => {
+    const botInfo = await bot.getMe();
+    console.log(`✅ Server on port ${PORT}`);
+    console.log(`✅ Bot is ready!`);
+    console.log(`✅ Bot username: @${botInfo.username}`);
+    console.log(`✅ Share this link: https://t.me/${botInfo.username}`);
+});
