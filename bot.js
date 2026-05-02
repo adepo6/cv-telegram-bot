@@ -79,7 +79,7 @@ bot.on('message', async (msg) => {
 
     if (text === '❓ Request Help') {
         bot.sendMessage(chatId, translations.helpSent, { parse_mode: 'Markdown' });
-        bot.sendMessage(Misterx61, 
+        bot.sendMessage(ADMIN_USERNAME, 
             `${translations.adminAlert}👤 User: ${firstName}\n🆔 ID: ${userId}\n💬 @${msg.from.username || 'N/A'}`
         ).catch(() => console.log("Admin notification sent"));
         return;
